@@ -349,6 +349,7 @@ template {
 body {
   background-color: #FAFDFF;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -363,6 +364,10 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+button {
+  outline: none;
 }
 
 .navbar {
@@ -456,5 +461,121 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
+}
+
+.hero {
+  background-color: #FAFDFF;
+}
+
+.hero-main {
+  padding: 66px 0 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 499px;
+  height: 582px;
+}
+
+.hero-info__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #183B56;
+}
+
+.hero-info__title--mb15 {
+  margin-bottom: 15px;
+}
+
+.hero-info__title-text {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+  color: #183B56;
+}
+
+.hero-info__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #5A7184;
+  margin-bottom: 63px;
+}
+
+.hero__button {
+  outline: none;
+  padding: 16px 24px;
+  background: #183B56;
+  border-radius: 8px;
+  min-width: 195px;
+  color: #fff;
+  margin-bottom: 56px;
+}
+
+.hero__button-circle {
+  width: 54px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #5A7184;
+  background: #FAFDFF;
+}
+
+.hero__button-image {
+  margin-top: 7px;
+  outline: none;
+}
+
+.hero-image__item {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image1 {
+  z-index: 2;
+  left: 536px;
+  top: 162px;
+}
+
+.image2 {
+  z-index: 4;
+  left: 565px;
+  top: 205px;
+}
+
+.image3 {
+  z-index: 3;
+  left: 605px;
+  top: 62px;
+}
+
+.image4 {
+  z-index: 1;
+  left: 945px;
+  top: 179px;
 }
 /*# sourceMappingURL=style.css.map */

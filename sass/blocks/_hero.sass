@@ -1,0 +1,74 @@
+.hero
+  background-color: #FAFDFF
+  &-main
+    padding: 66px 0 24px 0
+    @include disJustAli
+    position: relative
+  &-info
+    display: flex
+    flex-direction: column
+    // justify-content: space-between
+    align-items: flex-start
+    width: 499px
+    height: 582px
+    &__title
+      margin: 0
+      margin-bottom:
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      color: $navy
+      &--mb15
+        margin-bottom: 15px
+      &-text
+        font-weight: bold
+        font-size: 36px
+        line-height: 60px
+        color: $navy
+    &__text
+      font-family: $open
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: $light-navy
+      margin-bottom: 63px
+  &__button
+    outline: none
+    padding: 16px 24px
+    background: $navy
+    border-radius: 8px
+    min-width: 195px
+    color: #fff
+    margin-bottom: 56px
+    &-circle
+      width: 54px
+      height: 56px
+      border-radius: 50%
+      border: 2px solid $light-navy
+      background: $light
+    &-image
+      margin-top: 7px
+      outline: none
+  &-image
+    &__item
+      position: absolute
+      top: 0
+      right: 0
+.image1
+  z-index: 2
+  left: 536px
+  top: 162px
+.image2
+  z-index: 4
+  left: 565px
+  top: 205px
+.image3
+  z-index: 3
+  left: 605px
+  top: 62px
+.image4
+  z-index: 1
+  left: 945px
+  top: 179px
