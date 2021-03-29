@@ -5,45 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tolik-Agency</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="navbar">
       <div class="container">
-        <div class="navbar__logo">
-          <a href="./index.html" alt="Logo">
-            <img src="./img/Logo-header.svg" alt="" class="logo" />
-          </a>
+        <div class="navbar__header">
+          <div class="navbar__logo">
+            <a href="./index.html" >
+              <img src="./img/Logo-header.svg" alt="logo" class="logo" />
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <ul class="navbar-menu__items">
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Домой</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Лэндинги</a>
+                <img
+                  src="./img/button-down.svg"
+                  alt="button-down"
+                  class="navbar-menu__image"
+                />
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Страницы</a>
+                <img
+                  src="./img/button-down.svg"
+                  alt="button-down"
+                  class="navbar-menu__image"
+                />
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Помощь</a>
+              </li>
+            </ul>
+            <button class="button navbar-button">
+              <span class="navbar-button__text">Получить</span>
+            </button>
+          </div>
+          <!-- /.navbar__menu -->
         </div>
-        <div class="navbar-menu">
-          <ul class="navbar-menu__items">
-            <li class="navbar-menu__items">
-              <a href="#" class="navbar-menu__link">Домой</a>
-            </li>
-            <li class="navbar-menu__items">
-              <a href="#" class="navbar-menu__link">Лэндинги</a>
-              <img
-                src="./img/button-down.svg"
-                alt=""
-                class="navbar-menu__image"
-              />
-            </li>
-            <li class="navbar-menu__items">
-              <a href="#" class="navbar-menu__link">Страницы</a>
-              <img
-                src="./img/button-down.svg"
-                alt=""
-                class="navbar-menu__image"
-              />
-            </li>
-            <li class="navbar-menu__items">
-              <a href="#" class="navbar-menu__link">Помощь</a>
-            </li>
-          </ul>
-          <button class="button navbar-menu__button">Получить</button>
-        </div>
+        <!-- /.navbar__header -->
       </div>
+      <!-- /.container -->
     </header>
     <!-- /.header -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-main">
+          <div class="hero-wrapper">
+            <div class="hero-info">
+              <h2 class="hero-info__title">Номер #1,</h2>
+              <span class="hero-info__title-text">Южная Азия</span>
+              <h1 class="hero-info__title">Агенство цифровых продуктов</h1>
+              <span class="hero-info__text"
+                >Мы даем результаты, помогающие Вам добиться экономии средств и
+                времени без риска или накладных расходов на управление</span
+              >
+              <button class="button hero__button">Наше портфолио</button>
+              <button class="button hero__button-circle">
+                <img src="./img/button-Icon.svg" alt="" class="hero__button-image">
+              </button>
+            </div>
+            <!-- /.hero-wrapper__text -->
+          </div>
+          <!-- /.hero-info -->
+          <div class="hero-image">
+            <img src="./img/dots.svg" alt="dots" class="hero-image__item" />
+            <img src="./img/iphone.png" alt="iphone" class="hero-image__item" />
+            <img src="./img/Macbook.png" alt="macbook" class="hero-image__item" />
+            <img src="./img/oval.svg" alt="oval" class="hero-image__item" />
+          </div>
+          <!-- /.hero-image -->
+        </div>
+        <!-- /.hero-main -->
+      </div>
+    </section>
+    <!-- /.hero -->
   </body>
 </html>

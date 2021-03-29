@@ -1,0 +1,47 @@
+.navbar
+  background-color: #FAFDFF
+  &__header
+    @include disJustAli
+    padding: 26px 0
+  &-menu
+    @include disJustAli
+    max-width: 594px
+    &__items
+      @include disJustAli
+      margin: 0
+      margin-right: 40px
+      padding: 0
+    &__item
+      display: flex
+      align-items: center
+      // width: 96px
+      font-family: $open
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      list-style-type: none
+      margin-right: 27px
+      &:nth-child(2)
+        margin-right: 33px
+    &__link
+      color: $navy
+    &__image
+      width: 9px
+      height: 16px
+      text-align: center
+      margin-bottom: -2px
+      margin-left: 3px
+  &-button
+    padding: 13px 25px
+    background-color: $light
+    border-radius: 8px
+    border: 2px solid $blue
+    &__text
+      font-family: $open
+      color: $blue
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      
