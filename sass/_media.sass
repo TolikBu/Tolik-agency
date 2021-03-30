@@ -72,7 +72,7 @@
       height: 50%
       left: 675px
       top: 108px
-  .partner
+  .partners
     padding: 40px 0
     &-text
       &__title
@@ -81,6 +81,67 @@
         margin-right: 60px
         min-width: 286px
       &__quality
-        min-width: 472px
+        max-width: 350px
         font-size: 12px
         line-height: 24px
+    &-logo
+      &__item
+        margin-right: 15px
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+    width: 92%
+  body
+    margin-top: 83px
+  .navbar
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &-menu
+      display: none
+      align-content: start
+      justify-content: flex-start
+      position: fixed
+      min-width: 100%
+      background: $light
+      left: 0
+      right: 0
+      bottom: 0
+      top: 83px
+      &__items
+        flex-direction: column
+        align-items: center
+        margin: 0
+      &__item
+        display: block
+        margin-right: 0
+        margin-bottom: 20px
+        &:nth-child(2)
+          margin-right: 0  
+      &--visible
+        display: flex
+        align-content: flex-start
+        flex-direction: column
+        align-items: center
+    &-button
+      order: 0
+  .button
+    &-hidden
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      border: none
+      flex-direction: column
+      cursor: pointer
+      background-color: $light
+      &__line
+        width: 16px
+        height: 1px
+        background-color: #3A4C66
