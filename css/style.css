@@ -890,6 +890,20 @@ button {
   .partners-logo__item {
     margin-right: 15px;
   }
+  .service-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .service-heading__title {
+    margin-bottom: 16px;
+  }
+  .service-heading__text {
+    margin: 0;
+    min-width: 280px;
+  }
 }
 
 @media (max-width: 768px) {
