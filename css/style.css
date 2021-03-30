@@ -81,6 +81,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -366,7 +367,7 @@ button {
 }
 
 .navbar {
-  background-color: #FAFDFF;
+  background-color: #fafdff;
 }
 
 .navbar__header {
@@ -413,7 +414,7 @@ button {
 }
 
 .navbar-menu__link {
-  color: #183B56;
+  color: #183b56;
 }
 
 .navbar-menu__image {
@@ -426,14 +427,14 @@ button {
 
 .navbar-button {
   padding: 13px 25px;
-  background-color: #FAFDFF;
+  background-color: #fafdff;
   border-radius: 8px;
-  border: 2px solid #1565D8;
+  border: 2px solid #1565d8;
 }
 
 .navbar-button__text {
   font-family: "Open Sans", sans-serif;
-  color: #1565D8;
+  color: #1565d8;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -445,16 +446,11 @@ button {
 }
 
 .hero {
-  background-color: #FAFDFF;
+  background-color: #fafdff;
   padding: 66px 0 105px 0;
 }
 
 .hero-main {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -475,7 +471,7 @@ button {
   font-weight: bold;
   font-size: 48px;
   line-height: 60px;
-  color: #183B56;
+  color: #183b56;
 }
 
 .hero-info__title--mb15 {
@@ -486,7 +482,7 @@ button {
   font-weight: bold;
   font-size: 36px;
   line-height: 60px;
-  color: #183B56;
+  color: #183b56;
 }
 
 .hero-info__text {
@@ -495,14 +491,14 @@ button {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #5A7184;
+  color: #5a7184;
   margin-bottom: 63px;
 }
 
 .hero__button {
   outline: none;
   padding: 16px 24px;
-  background: #183B56;
+  background: #183b56;
   border-radius: 8px;
   min-width: 195px;
   color: #fff;
@@ -513,8 +509,8 @@ button {
   width: 54px;
   height: 56px;
   border-radius: 50%;
-  border: 2px solid #5A7184;
-  background: #FAFDFF;
+  border: 2px solid #5a7184;
+  background: #fafdff;
 }
 
 .hero__button-image {
@@ -556,22 +552,9 @@ button {
 }
 
 .partners-wrapper {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
-  align-items: start;
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
->>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
+  align-items: center;
 }
 
 .partners__info {
@@ -580,34 +563,20 @@ button {
 
 .partners__our {
   display: block;
-<<<<<<< HEAD
   flex-basis: 100%;
-=======
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
->>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #00B8D9;
+  color: #00b8d9;
   margin-bottom: 28px;
 }
 
 .partners-text {
-<<<<<<< HEAD
   display: flex;
   align-items: center;
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
 }
 
 .partners-text__title {
@@ -616,7 +585,7 @@ button {
   font-weight: bold;
   font-size: 36px;
   line-height: 48px;
-  color: #183B56;
+  color: #183b56;
   margin: 0;
   margin-right: 145px;
 }
@@ -628,32 +597,19 @@ button {
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
-  color: #5A7184;
+  color: #5a7184;
 }
 
 .partners-logo {
-<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   align-items: center;
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
 }
 
 .partners-logo__item {
   margin-right: 97px;
 }
 
-<<<<<<< HEAD
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -762,8 +718,4 @@ button {
     font-size: 12px;
     line-height: 24px;
   }
-=======
-.partners-logo__item:nth-child(1) {
-  margin-right: 90px;
->>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
 }
