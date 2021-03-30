@@ -450,6 +450,11 @@ button {
 }
 
 .hero-main {
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -551,9 +556,22 @@ button {
 }
 
 .partners-wrapper {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: start;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+>>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
 }
 
 .partners__info {
@@ -562,7 +580,12 @@ button {
 
 .partners__our {
   display: block;
+<<<<<<< HEAD
   flex-basis: 100%;
+=======
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+>>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -574,8 +597,17 @@ button {
 }
 
 .partners-text {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
 }
 
 .partners-text__title {
@@ -600,15 +632,28 @@ button {
 }
 
 .partners-logo {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
   align-items: center;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
 }
 
 .partners-logo__item {
   margin-right: 97px;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -717,4 +762,8 @@ button {
     font-size: 12px;
     line-height: 24px;
   }
+=======
+.partners-logo__item:nth-child(1) {
+  margin-right: 90px;
+>>>>>>> 492289ea1d34c995a0791f461c0db60b56f1f8c4
 }
