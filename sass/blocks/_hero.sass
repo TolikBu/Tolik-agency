@@ -1,6 +1,18 @@
 .hero
-  background-color: #FAFDFF
+  // background-color: #FAFDFF
   padding: 58px 0 105px 0
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 58px
+    right: 0px
+    height: 657px
+    width: 754px
+    background-image: url("../img/mac.png")
+    background-size: inherit
+    background-repeat: no-repeat
+    z-index: -2
   &-main
     @include disJustAli
     position: relative
@@ -10,6 +22,7 @@
     align-items: flex-start
     max-width: 499px
     // height: 582px
+    position: relative
     &__title
       margin: 0
       font-style: normal
@@ -53,12 +66,19 @@
       border: 2px solid $light-navy
       background: $light
       outline: none
-    &-image
-      margin-top: 7px
-  &-image
-    &__item
-      width: 100%
-      object-fit: cover
-      position: absolute
-      left: 536px
-      top: 0
+    // &-image
+    //   margin-top: 7px
+  // &-image
+  //   width: 1000px
+  //   height: 567px
+  //   position: absolute
+  //   left: 536px
+  //   top: 0
+  //   &__hidden
+  //     display: none
+  //   &__item
+  //     width: 100%
+  //     object-fit: cover
+      // position: absolute
+      // left: 536px
+      // top: 0

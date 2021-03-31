@@ -1,12 +1,21 @@
+@media (max-width: 1260px)
+  .hero
+    &::before
+      background-size: 100%
+      right: 0px
+      width: 686px
 @media (max-width: 1200px)
   .container
     max-width: 960px
     margin: auto
   .navbar
-    &__hero
+    &__header
       padding: 26px 20px
   .hero
     padding: 66px 0 85px 0
+    &::before
+      width: 50%
+      height: 100%
     &-info
       &__title
         font-size: 40px
@@ -195,7 +204,6 @@
           letter-spacing: 0.2px
     &-image
       &__item
-        position: relative
         left: 0
         top: 0
   .partners
