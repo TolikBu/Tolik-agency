@@ -1,25 +1,24 @@
 .hero
   background-color: #FAFDFF
-  padding: 66px 0 105px 0
+  padding: 58px 0 105px 0
   &-main
     @include disJustAli
     position: relative
   &-info
     display: flex
     flex-direction: column
-    // justify-content: space-between
     align-items: flex-start
-    width: 499px
-    height: 582px
+    max-width: 499px
+    // height: 582px
     &__title
       margin: 0
       font-style: normal
       font-weight: bold
       font-size: 48px
-      line-height: 60px
+      line-height: 57px
       color: $navy
       &--mb15
-        margin-bottom: 15px
+        margin-bottom: 18px
       &-text
         font-weight: bold
         font-size: 36px
@@ -38,34 +37,28 @@
     padding: 16px 24px
     background: $navy
     border-radius: 8px
-    min-width: 195px
+    min-width: 242px
     color: #fff
     margin-bottom: 56px
+    font-family: $open
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
     &-circle
       width: 54px
       height: 56px
       border-radius: 50%
       border: 2px solid $light-navy
       background: $light
+      outline: none
     &-image
       margin-top: 7px
-      outline: none
   &-image
     &__item
+      width: 100%
+      object-fit: cover
       position: absolute
-.image1
-  z-index: 2
-  left: 536px
-  top: 100px
-.image2
-  z-index: 4
-  left: 565px
-  top: 143px
-.image3
-  z-index: 3
-  left: 605px
-  top: 0
-.image4
-  z-index: 1
-  left: 945px
-  top: 117px
+      left: 536px
+      top: 0

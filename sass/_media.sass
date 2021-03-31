@@ -29,6 +29,13 @@
         max-width: 470px
         font-size: 14px
         line-height: 28px
+  .service
+    &-heading
+      flex-direction: column
+    &-info
+      justify-content: space-around
+      &__card
+        max-width: 280px
 @media (max-width: 991px)
   .container
     max-width: 700px
@@ -57,21 +64,9 @@
       &__text
         font-size: 14px
         line-height: 28px
-    .image1
-      left: 450px
-      top: 60px
-    .image2
-      height: 60%
-      left: 485px
-      top: 90px
-    .image3
-      height: 60%
-      left: 517px
-      top: 0
-    .image4
-      height: 50%
-      left: 675px
-      top: 108px
+    &-image
+      &__item
+        left: 450px
   .partners
     padding: 40px 0
     &-text
@@ -91,12 +86,16 @@
     &-heading
       flex-direction: column
       text-align: center
+
       &__title
         margin-bottom: 16px
       &__text
         margin: 0
-        min-width: 280px  
-    
+        min-width: 280px
+    &-info
+      justify-content: space-between
+      &__card
+        margin-bottom: 15px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -160,3 +159,93 @@
         width: 16px
         height: 1px
         background-color: #3A4C66
+  .hero
+    &-wrapper
+      min-width: 100%
+  .partners
+    &-text
+      flex-direction: column
+      align-items: start
+      &__title
+        margin-bottom: 20px
+@media (max-width: 576px)
+  .container
+    max-width: 90%
+  .navbar
+    padding-top: 20px
+    padding-bottom: 20px
+  .hero
+    padding-top: 36px
+    padding-bottom: 48px
+    &-main
+      flex-direction: column
+    &-info
+      align-items: center
+      text-align: center
+      margin-right: 0
+      &__title
+        font-size: 30px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        &-text
+          font-size: 30px
+          line-height: 36px
+          text-align: center
+          letter-spacing: 0.2px
+    &-image
+      &__item
+        position: relative
+        left: 0
+        top: 0
+  .partners
+    padding-top: 64px
+    &__info
+      text-align: center
+      margin-bottom: 24px
+    &__our
+      font-size: 14px
+      line-height: 19px
+      margin: auto
+      margin-bottom: 24px
+    &-text
+      text-align: center
+      &__title
+        min-width: 280px
+        font-size: 28px
+        line-height: 29px
+        margin: auto
+        margin-bottom: 15px
+      &__quality
+        margin: auto
+    &-logo
+      flex-wrap: wrap
+      justify-content: space-evenly
+      &__item
+        width: 180px
+        height: 32px
+        flex-basis: 40%
+        margin-right: 0
+        margin-bottom: 25px
+        &:nth-child(5)
+          display: none
+  .service
+    padding: 36px 0 35px 0
+    &-heading
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        font-size: 16px
+        line-height: 28px
+    &-info
+      &__card
+        min-width: 100%
+        min-height: 197px
+        flex-direction: column
+        &__title
+          font-size: 20px
+          line-height: 24px
+        &__text
+          font-size: 14px
+          line-height: 20px
