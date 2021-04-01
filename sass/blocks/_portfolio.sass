@@ -1,6 +1,8 @@
 .portfolio
   padding: 100px 0 100px 0
-  position: relative
+  &-wrapper
+    // position: relative
+    overflow: hidden
   &__info
     font-family: $open
     font-style: normal
@@ -34,24 +36,29 @@
         background-image: url(../img/prev-button.svg)
         background-repeat: no-repeat
         background-position: center
+        &:hover
+          background-image: url(../img/next-button.svg)
+          transform: rotate(180deg)
       &--next
         width: 56px
         height: 56px
         border: none
         background-color: #fff
-        background-image: url(../img/next-button.svg)
+        background-image: url(../img/prev-button.svg)
+        transform: rotate(180deg)
         background-repeat: no-repeat
         background-position: center
+        &:hover
+          background-image: url(../img/next-button.svg)
+          transform: rotate(360deg)
   &-slides
-    display: flex
-    position: absolute
     &__card
-      position:
+      // position: absolute
       width: 360px
       height: 524px
       border-radius: 10px
       border: 1px solid #DDE6F4
-      margin-right: 30px
+      // margin-right: 30px
     &__image
       margin-bottom: 24px
     &__info
@@ -71,6 +78,14 @@
       letter-spacing: 0.2px
       color: $navy
       margin-left: 24px
-.swiper-container
-  width: 400px
-  height: 524px
+  .swiper-container
+    width: 1530px
+    height: 524px
+    margin: 0
+    overflow: visible
+    position: relative
+  .swiper-wrapper
+    width: 1530px
+    position: absolute
+  .swiper-slide
+    width: 390px

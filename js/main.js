@@ -7,27 +7,23 @@
 
 var menuButton = document.querySelector(".button-hidden");
 menuButton.addEventListener("click", function () {
-  document.querySelector(".navbar-menu").classList.toggle("navbar-menu--visible");
+  document
+    .querySelector(".navbar-menu")
+    .classList.toggle("navbar-menu--visible");
 });
 
 const swiper = new Swiper(".swiper-container", {
   // Optional parameters
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  slidesPerView: "auto",
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".portfolio-heading__button--next",
+    prevEl: ".portfolio-heading__button--prev",
   },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
   },
 });
-
