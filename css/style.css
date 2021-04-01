@@ -694,10 +694,6 @@ button {
   padding: 100px 0 100px 0;
 }
 
-.portfolio-wrapper {
-  overflow: hidden;
-}
-
 .portfolio__info {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -798,8 +794,8 @@ button {
   width: 1530px;
   height: 524px;
   margin: 0;
-  overflow: visible;
-  position: relative;
+  right: 0;
+  left: 0;
 }
 
 .portfolio .swiper-wrapper {
