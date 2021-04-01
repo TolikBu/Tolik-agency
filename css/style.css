@@ -552,10 +552,10 @@ button {
 }
 
 .hero__button {
-  outline: none;
   padding: 16px 24px;
   background: #183B56;
   border-radius: 8px;
+  border: none;
   min-width: 242px;
   color: #fff;
   margin-bottom: 56px;
@@ -573,7 +573,6 @@ button {
   border-radius: 50%;
   border: 2px solid #5A7184;
   background: #FAFDFF;
-  outline: none;
 }
 
 .partners {
@@ -771,6 +770,115 @@ button {
   font-size: 14px;
   line-height: 20px;
   color: #5A7184;
+}
+
+.portfolio {
+  padding: 100px 0 100px 0;
+  position: relative;
+}
+
+.portfolio__info {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #00B8D9;
+  margin-bottom: 20px;
+}
+
+.portfolio-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+}
+
+.portfolio-heading__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin: 0;
+}
+
+.portfolio-heading__button {
+  outline: none;
+}
+
+.portfolio-heading__button--prev {
+  width: 56px;
+  height: 56px;
+  border: none;
+  background: #fff;
+  background-image: url(../img/prev-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio-heading__button--next {
+  width: 56px;
+  height: 56px;
+  border: none;
+  background-color: #fff;
+  background-image: url(../img/next-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio-slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.portfolio-slides__card {
+  width: 360px;
+  height: 524px;
+  border-radius: 10px;
+  border: 1px solid #DDE6F4;
+  margin-right: 30px;
+}
+
+.portfolio-slides__image {
+  margin-bottom: 24px;
+}
+
+.portfolio-slides__info {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1565D8;
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.portfolio-slides__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  margin-left: 24px;
+}
+
+.swiper-container {
+  width: 400px;
+  height: 524px;
 }
 
 @media (max-width: 1260px) {

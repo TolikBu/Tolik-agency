@@ -1,0 +1,76 @@
+.portfolio
+  padding: 100px 0 100px 0
+  position: relative
+  &__info
+    font-family: $open
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: #00B8D9
+    margin-bottom: 20px
+  &-heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 48px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      letter-spacing: 0.2px
+      color: $navy
+      margin: 0
+    &__button
+      outline: none
+      &--prev
+        width: 56px
+        height: 56px
+        border: none
+        background: #fff
+        background-image: url(../img/prev-button.svg)
+        background-repeat: no-repeat
+        background-position: center
+      &--next
+        width: 56px
+        height: 56px
+        border: none
+        background-color: #fff
+        background-image: url(../img/next-button.svg)
+        background-repeat: no-repeat
+        background-position: center
+  &-slides
+    display: flex
+    position: absolute
+    &__card
+      position:
+      width: 360px
+      height: 524px
+      border-radius: 10px
+      border: 1px solid #DDE6F4
+      margin-right: 30px
+    &__image
+      margin-bottom: 24px
+    &__info
+      font-family: $open
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      color: $blue
+      margin-left: 24px
+      margin-bottom: 16px
+    &__name
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 40px
+      letter-spacing: 0.2px
+      color: $navy
+      margin-left: 24px
+.swiper-container
+  width: 400px
+  height: 524px
