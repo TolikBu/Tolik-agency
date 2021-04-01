@@ -12,7 +12,7 @@ menuButton.addEventListener("click", function () {
     .classList.toggle("navbar-menu--visible");
 });
 
-const swiper = new Swiper(".swiper-container", {
+const portfolioSwiper = new Swiper(".portfolio-slider", {
   // Optional parameters
   loop: true,
   slidesPerView: "auto",
@@ -21,6 +21,20 @@ const swiper = new Swiper(".swiper-container", {
   navigation: {
     nextEl: ".portfolio-heading__button--next",
     prevEl: ".portfolio-heading__button--prev",
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+
+const reviewsSwiper = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-heading__button--next",
   },
   keyboard: {
     enabled: true,
