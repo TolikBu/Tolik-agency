@@ -527,6 +527,10 @@ button {
   text-align: center;
 }
 
+.hero__button-image {
+  margin-top: 3px;
+}
+
 .hero__button-circle {
   width: 54px;
   height: 56px;
@@ -991,16 +995,19 @@ button {
 .social-bottom__icon {
   width: 64px;
   height: 64px;
+  background-color: rgba(21, 101, 216, 0.1);
   border-radius: 16px;
   align-items: center;
   margin: auto;
   margin-bottom: 35px;
-  fill: #1565D8;
 }
 
 .social-bottom__image {
   margin-top: 25%;
-  fill: #1565D8;
+}
+
+.social-bottom__image--mb30 {
+  margin-top: 30%;
 }
 
 .social-bottom__title {
