@@ -31,7 +31,8 @@ const portfolioSwiper = new Swiper(".portfolio-slider", {
 const reviewsSwiper = new Swiper(".reviews-slider", {
   // Optional parameters
   loop: true,
-
+  slidesPerView: "auto",
+  
   // Navigation arrows
   navigation: {
     nextEl: ".reviews-heading__button--next",
