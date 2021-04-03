@@ -403,7 +403,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 594px;
 }
 
 .navbar-menu__items {
@@ -417,7 +416,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  margin-right: 21px;
+  margin-right: 54px;
   padding: 0;
 }
 
@@ -428,6 +427,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navbar-menu__link {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -435,14 +437,33 @@ button {
   line-height: 22px;
   list-style-type: none;
   margin-right: 32px;
-}
-
-.navbar-menu__item:nth-child(2) {
-  margin-right: 37px;
-}
-
-.navbar-menu__link {
   color: #183B56;
+}
+
+.navbar-menu__link-button {
+  border: none;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  list-style-type: none;
+  margin-right: 32px;
+  color: #183B56;
+  position: relative;
+  background-color: #FAFDFF;
+}
+
+.navbar-menu__link-button::after {
+  content: '';
+  width: 13px;
+  height: 16px;
+  top: 5px;
+  position: absolute;
+  background-image: url("../img/button-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navbar-menu__image {
@@ -573,6 +594,7 @@ button {
 }
 
 .hero__button-circle {
+  display: block;
   width: 54px;
   height: 56px;
   border-radius: 50%;

@@ -7,16 +7,15 @@
     display: block
   &-menu
     @include disJustAli
-    max-width: 594px
     &__items
       @include disJustAli
       margin: 0
-      margin-right: 21px
+      margin-right: 54px
       padding: 0
     &__item
       display: flex
       align-items: center
-      // width: 96px
+    &__link
       font-family: $open
       font-style: normal
       font-weight: 600
@@ -24,10 +23,29 @@
       line-height: 22px
       list-style-type: none
       margin-right: 32px
-      &:nth-child(2)
-        margin-right: 37px
-    &__link
       color: $navy
+      &-button
+        border: none
+        outline: none
+        font-family: $open
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        list-style-type: none
+        margin-right: 32px
+        color: $navy
+        position: relative
+        background-color: $light
+        &::after
+          content: ''
+          width: 13px
+          height: 16px
+          top: 5px
+          position: absolute
+          background-image: url('../img/button-down.svg')
+          background-repeat: no-repeat
+          background-position: center
     &__image
       width: 9px
       height: 16px

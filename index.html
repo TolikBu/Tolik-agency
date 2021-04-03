@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tolik-Agency</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap"
@@ -14,34 +16,35 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="navbar navbar--mobile_fixed">
+    <div class="navbar navbar--mobile_fixed">
       <div class="container">
-        <div class="navbar__header">
+        <header class="navbar__header">
           <div class="navbar__logo">
             <a href="./index.html" class="navbar__link">
               <img src="./img/Logo-header.svg" alt="logo" class="logo" />
             </a>
           </div>
-          <div class="navbar-menu">
+          <nav class="navbar-menu">
             <ul class="navbar-menu__items">
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">Домой</a>
               </li>
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Лэндинги</a>
-                <img
-                  src="./img/button-down.svg"
-                  alt="button-down"
-                  class="navbar-menu__image"
-                />
+                <button
+                  href="#"
+                  class="navbar-menu__link navbar-menu__link-button"
+                >
+                  Лэндинги
+                </button>
               </li>
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Страницы</a>
-                <img
-                  src="./img/button-down.svg"
-                  alt="button-down"
-                  class="navbar-menu__image"
-                />
+                <button
+                  href="#"
+                  class="navbar-menu__link navbar-menu__link-button"
+                >
+                  Страницы
+                </button>
+
               </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">Помощь</a>
@@ -50,18 +53,18 @@
             <button class="button navbar-button">
               <span class="navbar-button__text">Получить</span>
             </button>
-          </div>
+          </nav>
           <!-- /.navbar__menu -->
           <button class="button-hidden navbar__menu-button">
             <span class="button-hidden__line"></span>
             <span class="button-hidden__line"></span>
             <span class="button-hidden__line"></span>
           </button>
-        </div>
+        </header>
         <!-- /.navbar__header -->
       </div>
       <!-- /.container -->
-    </header>
+    </div>
     <!-- /.header -->
     <section class="hero">
       <div class="container">
@@ -73,21 +76,21 @@
               <h1 class="hero-info__title hero-info__title--mb15">
                 Агенство цифровых продуктов
               </h1>
-              <span class="hero-info__text"
-                >Мы даем результаты, помогающие Вам добиться экономии средств и
-                времени без риска или накладных расходов на управление</span
-              >
-              <button class="button hero__button" href="#portfolio">
+              <p class="hero-info__text">
+                Мы даем результаты, помогающие Вам добиться экономии средств и
+                времени без риска или накладных расходов на управление
+              </p>
+              <a class="button hero__button" href="#portfolio">
                 Наше портфолио
-              </button>
+              </a>
 
-              <button class="button hero__button-circle">
+              <a class="button hero__button-circle">
                 <img
                   src="./img/button-Icon.svg"
                   alt=""
                   class="hero__button-image"
                 />
-              </button>
+              </a>
             </div>
             <!-- /.hero-info -->
           </div>

@@ -2,7 +2,6 @@
   padding: 58px 0 105px 0
   position: relative
   background-color: $light
-  z-index: -3
   &::before
     content: ''
     position: absolute
@@ -13,7 +12,6 @@
     background-image: url("../img/mac.png")
     background-size: inherit
     background-repeat: no-repeat
-    z-index: -2
   &-main
     @include disJustAli
     position: relative
@@ -22,7 +20,6 @@
     flex-direction: column
     align-items: flex-start
     max-width: 499px
-    // height: 582px
     position: relative
     &__title
       margin: 0
@@ -64,6 +61,7 @@
     &-image
       margin-top: 3px
     &-circle
+      display: block
       width: 54px
       height: 56px
       border-radius: 50%
