@@ -1,12 +1,14 @@
 .navbar
   background-color: #FAFDFF
   padding: 28px 0
+  overflow: visible
   &__header
     @include disJustAli
   &__link
     display: block
   &-menu
     @include disJustAli
+    position: relative
     &__items
       @include disJustAli
       margin: 0
@@ -27,6 +29,7 @@
       &-button
         border: none
         outline: none
+        padding: 0
         font-family: $open
         font-style: normal
         font-weight: 600
@@ -52,6 +55,29 @@
       text-align: center
       margin-bottom: -2px
       margin-left: 3px
+    &__hidden
+      display: none
+      position: absolute
+      padding: 0
+      top: 100%
+      z-index: -1
+      &--visible
+        display: block
+        top: 100%
+        transition: 1s
+        z-index: 10
+      &-link
+        font-family: $open
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        list-style-type: none
+        margin-right: 32px
+        color: $navy
+        list-style-type: none
+        margin-bottom: 10px
+        cursor: pointer
   &-button
     padding: 11px 25px
     background-color: $light

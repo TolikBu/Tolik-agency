@@ -36,6 +36,12 @@
                 >
                   Лэндинги
                 </button>
+                <ul class="navbar-menu__hidden">
+                  <li class="navbar-menu__hidden-link">Flowers</li>
+                  <li class="navbar-menu__hidden-link">House</li>
+                  <li class="navbar-menu__hidden-link">Devs</li>
+                  <li class="navbar-menu__hidden-link">Music</li>
+                </ul>
               </li>
               <li class="navbar-menu__item">
                 <button
@@ -44,13 +50,22 @@
                 >
                   Страницы
                 </button>
-
+                <ul class="navbar-menu__hidden">
+                  <li class="navbar-menu__hidden-link">Главная</li>
+                  <li class="navbar-menu__hidden-link">Проекты</li>
+                  <li class="navbar-menu__hidden-link">Отзывы</li>
+                  <li class="navbar-menu__hidden-link">Конаткы</li>
+                </ul>
               </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">Помощь</a>
               </li>
             </ul>
-            <button class="button navbar-button">
+            <button
+              class="button navbar-button"
+              data-toggle="modal"
+              data-href="#agency-modal"
+            >
               <span class="navbar-button__text">Получить</span>
             </button>
           </nav>
@@ -83,14 +98,7 @@
               <a class="button hero__button" href="#portfolio">
                 Наше портфолио
               </a>
-
-              <a class="button hero__button-circle">
-                <img
-                  src="./img/button-Icon.svg"
-                  alt=""
-                  class="hero__button-image"
-                />
-              </a>
+              <a class="button hero__button-circle" href="#partners"></a>
             </div>
             <!-- /.hero-info -->
           </div>
@@ -100,11 +108,11 @@
       </div>
     </section>
     <!-- /.hero -->
-    <section class="partners">
+    <section class="partners" id="partners">
       <div class="container">
         <div class="patners-wrapper">
           <div class="partners__info">
-            <span class="partners__our">Наши партнеры</span>
+            <span class="partners__our const-text">Наши партнеры</span>
             <div class="partners-text">
               <h2 class="partners-text__title">
                 Мы работали с ними, Мы&nbsp;доверяем друг другу
@@ -163,7 +171,7 @@
       <div class="container">
         <div class="service-wrapper">
           <div class="service-heading">
-            <h3 class="service-heading__title">Что мы делаем</h3>
+            <h2 class="service-heading__title">Что мы делаем</h2>
             <div class="service-heading__text">
               Мы работаем вместе с нашим клиентом, чтобы создать эффективный
               продукт.
@@ -257,9 +265,9 @@
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio-wrapper">
-          <span class="portfolio__info">Портфолио</span>
+          <span class="portfolio__info const-text">Портфолио</span>
           <div class="portfolio-heading">
-            <h3 class="portfolio-heading__title">Наши проекты</h3>
+            <h2 class="portfolio-heading__title">Наши проекты</h2>
             <div class="portfolio-heading__button">
               <button
                 class="portfolio-heading__button portfolio-heading__button--prev"
@@ -279,8 +287,10 @@
                     alt="slide"
                     class="portfolio-slides__image"
                   />
-                  <div class="portfolio-slides__info">Вебсайт, Лендинг</div>
-                  <div class="portfolio-slides__name">Проект Вебсайта</div>
+                  <div class="portfolio-slides__footer">
+                    <div class="portfolio-slides__info">Вебсайт, Лендинг</div>
+                    <div class="portfolio-slides__name">Проект Вебсайта</div>
+                  </div>
                 </div>
               </div>
               <!-- /.portfolio-card -->
@@ -291,10 +301,12 @@
                     alt="slide"
                     class="portfolio-slides__image"
                   />
-                  <div class="portfolio-slides__info">
-                    Паенль навигации, UI/UX Дизайн
+                  <div class="portfolio-slides__footer">
+                    <div class="portfolio-slides__info">
+                      Паенль навигации, UI/UX Дизайн
+                    </div>
+                    <div class="portfolio-slides__name">Проект Дизайна</div>
                   </div>
-                  <div class="portfolio-slides__name">Проект Дизайна</div>
                 </div>
               </div>
               <!-- /.portfolio-card -->
@@ -305,10 +317,12 @@
                     alt="slide"
                     class="portfolio-slides__image"
                   />
-                  <div class="portfolio-slides__info">
-                    Приложения, Мобильные, iOS
+                  <div class="portfolio-slides__footer">
+                    <div class="portfolio-slides__info">
+                      Приложения, Мобильные, iOS
+                    </div>
+                    <div class="portfolio-slides__name">Проекты приложений</div>
                   </div>
-                  <div class="portfolio-slides__name">Проекты приложений</div>
                 </div>
               </div>
               <!-- /.portfolio-card -->
@@ -319,8 +333,10 @@
                     alt="slide"
                     class="portfolio-slides__image"
                   />
-                  <div class="portfolio-slides__info">Instagram</div>
-                  <div class="portfolio-slides__name">Проект Иллюстраций</div>
+                  <div class="portfolio-slides__footer">
+                    <div class="portfolio-slides__info">Instagram</div>
+                    <div class="portfolio-slides__name">Проект Иллюстраций</div>
+                  </div>
                 </div>
               </div>
               <!-- /.portfolio-card -->
@@ -334,9 +350,9 @@
     <section class="reviews">
       <div class="container">
         <div class="reviews-wrapper">
-          <span class="reviews__info">Отзывы</span>
+          <span class="reviews__info const-text">Отзывы</span>
           <div class="reviews-heading">
-            <h3 class="reviews-heading__title">Что говорят о нас</h3>
+            <h2 class="reviews-heading__title">Что говорят о нас</h2>
           </div>
           <!-- /.reviews-heading -->
           <div class="swiper-container reviews-slider">
@@ -372,24 +388,23 @@
                 <div class="card reviews-slides__card">
                   <div class="reviews-slides__user">
                     <img
-                      src="./img/icon-slide1.png"
+                      src="./img/avatar2.png"
                       class="reviews-slides__avatar"
                       alt="user photo"
                     />
                     <div class="reviews-slides__username">
-                      <h4 class="reviews-slides__name">Jaquon Hart</h4>
+                      <h4 class="reviews-slides__name">Valdemar Forsberg</h4>
                       <span class="reviews-slides__title">
-                        Вице-президент - компания Lizlle
+                        Основатель Digitac Finance
                       </span>
                     </div>
                   </div>
                   <div class="reviews-slides__text">
                     <div class="reviews-slides__review">
-                      «Их навыки и опыт в области пользовательского интерфейса /
-                      пользовательского интерфейса были ключевыми для выявления
-                      потенциальных проблемных моментов в наших
-                      бизнес-процессах, которые они прекрасно исправили или
-                      оптимизировали».
+                      Ehya подтолкнул нас к мысли, выходящей за рамки наших
+                      первоначальных возможностей и воображения, при этом
+                      гарантируя, что дизайн и форма платформы постоянно
+                      корректируются на основе данных.
                     </div>
                   </div>
                 </div>
@@ -426,24 +441,23 @@
                 <div class="card reviews-slides__card">
                   <div class="reviews-slides__user">
                     <img
-                      src="./img/icon-slide1.png"
+                      src="./img/avatar2.png"
                       class="reviews-slides__avatar"
                       alt="user photo"
                     />
                     <div class="reviews-slides__username">
-                      <h4 class="reviews-slides__name">Jaquon Hart</h4>
+                      <h4 class="reviews-slides__name">Valdemar Forsberg</h4>
                       <span class="reviews-slides__title">
-                        Вице-президент - компания Lizlle
+                        Основатель Digitac Finance
                       </span>
                     </div>
                   </div>
                   <div class="reviews-slides__text">
                     <div class="reviews-slides__review">
-                      «Их навыки и опыт в области пользовательского интерфейса /
-                      пользовательского интерфейса были ключевыми для выявления
-                      потенциальных проблемных моментов в наших
-                      бизнес-процессах, которые они прекрасно исправили или
-                      оптимизировали».
+                      Ehya подтолкнул нас к мысли, выходящей за рамки наших
+                      первоначальных возможностей и воображения, при этом
+                      гарантируя, что дизайн и форма платформы постоянно
+                      корректируются на основе данных.
                     </div>
                   </div>
                 </div>
@@ -465,8 +479,8 @@
       <div class="container">
         <div class="social-wrapper">
           <div class="social-top">
-            <span class="social-top__text">Наши соцсети</span>
-            <h3 class="social-top__title">Будем друзьями</h3>
+            <span class="social-top const-text">Наши соцсети</span>
+            <h2 class="social-top__title">Будем друзьями</h2>
           </div>
           <!-- /.social-top -->
           <div class="social-bottom">
@@ -565,7 +579,13 @@
             >Отправьте нам свой бриф и расскажите о своем проекте. Мы готовы
             помочь всем, что вам нужно</span
           >
-          <button class="order-wrapper__button">Пообщаемся?</button>
+          <button
+            class="order-wrapper__button"
+            data-toggle="modal"
+            data-href="#agency-modal"
+          >
+            Пообщаемся?
+          </button>
         </div>
         <!-- /.order-wrapper -->
       </div>
@@ -677,7 +697,58 @@
       </div>
     </footer>
 
+    <div class="modal" id="agency-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Ваше сообщение</h3>
+        <form action="./send.php" method="POST" class="modal__form form">
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Введите Ваше имя*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input"
+              placeholder="Введите телефон*"
+              name="phone"
+              required
+              minlength="17"
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Ваш Email*"
+              name="email"
+              required
+            />
+          </div>
+          <textarea
+            class="message modal__message"
+            placeholder="Комментарий*"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Получить</button>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -10,13 +10,6 @@
   &__our
     display: block
     flex-basis: 100%
-    font-family: $open
-    font-style: normal
-    font-weight: 600
-    font-size: 14px
-    line-height: 19px
-    text-transform: uppercase
-    color: $light-blue
     margin-bottom: 28px
     letter-spacing: 2px
   &-text
@@ -44,4 +37,5 @@
     display: flex
     align-items: center
     &__item
-      margin-right: 94px
+      &:not(:last-child)
+        margin-right: 94px
