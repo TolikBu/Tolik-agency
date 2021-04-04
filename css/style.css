@@ -562,7 +562,7 @@ button {
 }
 
 .hero {
-  padding: 58px 0 105px 0;
+  padding: 58px 0 108px 0;
   position: relative;
   background-color: #FAFDFF;
 }
@@ -635,11 +635,12 @@ button {
   line-height: 32px;
   color: #5A7184;
   margin-bottom: 63px;
+  margin-top: 0;
 }
 
 .hero__button {
   display: block;
-  padding: 16px 24px;
+  padding: 13px 24px;
   background: #183B56;
   border-radius: 8px;
   border: 2px solid #183B56;
@@ -741,7 +742,7 @@ button {
 }
 
 .service {
-  padding: 80px 0 57px 0;
+  padding: 84px 0 57px 0;
   background: #F9FBFE;
 }
 
@@ -857,7 +858,7 @@ button {
 }
 
 .portfolio {
-  padding: 100px 0;
+  padding: 90px 0;
 }
 
 .portfolio-duble {
@@ -866,7 +867,7 @@ button {
 
 .portfolio__info {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .portfolio-heading {
@@ -893,15 +894,17 @@ button {
 }
 
 .portfolio-heading__button {
+  position: relative;
   outline: none;
+  margin-right: 95px;
 }
 
 .portfolio-heading__button--prev {
-  width: 14px;
-  height: 14px;
-  padding: 20px 21px;
+  width: 56px;
+  height: 56px;
   border: none;
   background: #fff;
+  margin: 0;
   background-image: url(../img/prev-button.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -918,6 +921,7 @@ button {
   height: 56px;
   border: none;
   background-color: #fff;
+  margin: 0;
   background-image: url(../img/prev-button.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -948,7 +952,8 @@ button {
 }
 
 .portfolio-slides__footer {
-  padding: 24px;
+  padding: 23px;
+  padding-top: 14px;
   padding-right: 0;
 }
 
@@ -990,7 +995,7 @@ button {
 }
 
 .reviews {
-  padding: 60px 0 50px 0;
+  padding: 66px 0 50px 0;
 }
 
 .reviews-wrapper {
@@ -1122,7 +1127,7 @@ button {
 }
 
 .social {
-  padding: 50px 0 60px 0;
+  padding: 40px 0 120px 0;
 }
 
 .social-wrapper {
@@ -1152,6 +1157,7 @@ button {
   letter-spacing: 0.2px;
   color: #183B56;
   margin-bottom: 60px;
+  margin-top: 20px;
 }
 
 .social-bottom {
@@ -1210,10 +1216,18 @@ button {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #5A7184;
-  margin-bottom: 19px;
+  margin-bottom: 26px;
+}
+
+.social-bottom__text:nth-child(3) {
+  font-size: 14px;
+}
+
+.social-bottom__text:nth-child(4) {
+  font-size: 14px;
 }
 
 .social-bottom__link {
@@ -1240,7 +1254,7 @@ button {
 }
 
 .order {
-  padding: 60px 0 80px 0;
+  padding: 19px 0 80px 0;
   background: #00B8D9;
   position: relative;
   overflow: hidden;
@@ -1334,7 +1348,7 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin-bottom: 92px;
+  margin-bottom: 69px;
 }
 
 .footer-info__blocks2 {
@@ -2098,8 +2112,8 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 130px;
-    margin-bottom: 32px;
+    max-width: 133px;
+    margin-bottom: 0;
   }
   .social-bottom__item:not(:last-child) {
     margin-right: 0;
@@ -2203,7 +2217,7 @@ button {
     padding-bottom: 20px;
   }
   .hero {
-    padding-top: 36px;
+    padding-top: 29px;
     padding-bottom: 48px;
   }
   .hero::before {
@@ -2236,6 +2250,9 @@ button {
     text-align: center;
     letter-spacing: 0.2px;
   }
+  .hero-info__title--mb15 {
+    margin-bottom: 8px;
+  }
   .hero-info__title-text {
     font-size: 30px;
     line-height: 36px;
@@ -2243,11 +2260,13 @@ button {
     letter-spacing: 0.2px;
   }
   .hero-info__text {
-    margin-bottom: 26px;
+    margin-bottom: 18px;
   }
   .hero__button {
+    padding: 11px 24px;
     font-size: 16px;
     line-height: 22px;
+    min-width: 218px;
     margin-bottom: 540px;
   }
   .hero-image__item {
@@ -2255,7 +2274,7 @@ button {
     top: 0;
   }
   .partners {
-    padding-top: 64px;
+    padding-top: 71px;
   }
   .partners__info {
     text-align: center;
@@ -2275,7 +2294,7 @@ button {
     font-size: 28px;
     line-height: 29px;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
   .partners-text__quality {
     margin: auto;
@@ -2309,7 +2328,10 @@ button {
     padding-left: 0;
   }
   .service {
-    padding: 36px 0 35px 0;
+    padding: 61px 0 35px 0;
+  }
+  .service-heading {
+    margin-bottom: 4px;
   }
   .service-heading__title {
     font-size: 28px;
@@ -2322,10 +2344,45 @@ button {
   .service-info__card {
     min-width: 100%;
     min-height: 197px;
+    padding: 17px 28px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 7px;
+  }
+  .service-info__card:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .service-info__card:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .service-info__card:nth-child(3) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .service-info__card:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .service-info__card:nth-child(5) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .service-info__card:nth-child(6) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
   }
   .service-info__card__title {
     font-size: 20px;
@@ -2335,17 +2392,35 @@ button {
     font-size: 14px;
     line-height: 20px;
   }
+  .card__image {
+    margin-bottom: 17px;
+  }
+  .portfolio {
+    padding-top: 42px;
+  }
+  .portfolio-slides__footer {
+    padding: 16px 0 14px 0;
+  }
+  .portfolio-slides__info {
+    margin-bottom: 15px;
+  }
+  .reviews {
+    padding-top: 8px;
+  }
   .reviews__info {
     text-align: center;
+    margin-bottom: 24px;
   }
   .reviews-heading__title {
     font-size: 28px;
     line-height: 36px;
     margin: auto;
-    margin-bottom: 68px;
+    margin-bottom: 19px;
   }
   .reviews-heading__button--next {
     position: relative;
+    width: 49px;
+    height: 49px;
     top: 24px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2358,6 +2433,9 @@ button {
             align-items: center;
     -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
             box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .reviews-slides__review {
+    line-height: 22px;
   }
   .reviews-slides__user {
     -webkit-box-orient: vertical;
@@ -2392,6 +2470,50 @@ button {
             box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
   }
+  .social {
+    padding-top: 42px;
+  }
+  .social-top__title {
+    margin-top: 24px;
+    margin-bottom: 19px;
+  }
+  .social-bottom__item:nth-child(1) {
+    margin-bottom: 18px;
+  }
+  .social-bottom__item:nth-child(2) {
+    margin-bottom: 18px;
+  }
+  .social-bottom__icon {
+    width: 48px;
+    height: 48px;
+  }
+  .social-bottom__image {
+    display: block;
+    position: relative;
+    width: 21px;
+    height: 21px;
+    left: 13px;
+    top: 14px;
+  }
+  .social-bottom__text {
+    margin-bottom: 2px;
+  }
+  .order {
+    padding-top: 40px;
+  }
+  .order-wrapper__title {
+    margin-bottom: 32px;
+  }
+  .order-wrapper__text {
+    margin-bottom: 38px;
+  }
+  .footer {
+    padding-left: 8px;
+  }
+  .footer-info__blocks {
+    margin: 0;
+    width: 100%;
+  }
   .footer-info__blocks2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2401,9 +2523,15 @@ button {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  .footer-info__block {
+    min-width: 100%;
+    margin: 0;
   }
   .footer-info__item:nth-child(1) {
     margin-right: 44px;
+    margin-bottom: 24px;
   }
   .footer-info__item:nth-child(3) {
     margin-right: 56px;
@@ -2414,12 +2542,15 @@ button {
   .footer-info__item-link--hidden {
     display: block;
   }
+  .footer-info-social__link {
+    display: block;
+  }
 }
 
 @media (max-width: 450px) {
   .hero::before {
     background-image: url(../img/mac-320.png);
-    top: 460px;
+    top: 443px;
   }
   .hero__button {
     margin-bottom: 460px;
@@ -2428,10 +2559,14 @@ button {
 
 @media (max-width: 350px) {
   .hero__button {
-    margin-bottom: 330px;
+    margin-bottom: 319px;
+  }
+  .hero__button-circle {
+    width: 48px;
+    height: 48px;
   }
   .card__title {
-    margin-bottom: 0;
+    margin-bottom: 9px;
   }
 }
 /*# sourceMappingURL=style.css.map */

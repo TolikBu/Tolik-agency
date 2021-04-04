@@ -347,9 +347,9 @@
       flex-wrap: wrap
       &__item
         align-items: center
-        max-width: 130px
+        max-width: 133px
         // max-height: 199px
-        margin-bottom: 32px
+        margin-bottom: 0
         &:not(:last-child)
           margin-right: 0
       &__icon
@@ -422,7 +422,7 @@
     padding-top: 20px
     padding-bottom: 20px
   .hero
-    padding-top: 36px
+    padding-top: 29px
     padding-bottom: 48px
     &::before
       display: block
@@ -445,23 +445,27 @@
         line-height: 36px
         text-align: center
         letter-spacing: 0.2px
+        &--mb15
+          margin-bottom: 8px
         &-text
           font-size: 30px
           line-height: 36px
           text-align: center
           letter-spacing: 0.2px
       &__text
-        margin-bottom: 26px
+        margin-bottom: 18px
     &__button
+      padding: 11px 24px
       font-size: 16px
       line-height: 22px
+      min-width: 218px
       margin-bottom: 540px
     &-image
       &__item
         left: 0
         top: 0
   .partners
-    padding-top: 64px
+    padding-top: 71px
     &__info
       text-align: center
       margin-bottom: 24px
@@ -477,7 +481,7 @@
         font-size: 28px
         line-height: 29px
         margin: auto
-        margin-bottom: 15px
+        margin-bottom: 18px
       &__quality
         margin: auto
     &-logo
@@ -502,8 +506,9 @@
       &__footer
         padding-left: 0
   .service
-    padding: 36px 0 35px 0
+    padding: 61px 0 35px 0
     &-heading
+      margin-bottom: 4px
       &__title
         font-size: 28px
         line-height: 36px
@@ -514,25 +519,54 @@
       &__card
         min-width: 100%
         min-height: 197px
+        padding: 17px 28px
         flex-direction: column
+        justify-content: flex-start
+        margin-bottom: 7px
+        &:nth-child(1)
+          order: 1
+        &:nth-child(2)
+          order: 2
+        &:nth-child(3)
+          order: 5
+        &:nth-child(4)
+          order: 3
+        &:nth-child(5)
+          order: 4
+        &:nth-child(6)
+          order: 6
         &__title
           font-size: 20px
           line-height: 24px
         &__text
           font-size: 14px
           line-height: 20px
+  .card
+    &__image
+      margin-bottom: 17px
+  .portfolio
+    padding-top: 42px
+    &-slides
+      &__footer
+        padding: 16px 0 14px 0
+      &__info
+        margin-bottom: 15px
   .reviews
+    padding-top: 8px
     &__info
       text-align: center
+      margin-bottom: 24px
     &-heading
       &__title
         font-size: 28px
         line-height: 36px
         margin: auto
-        margin-bottom: 68px
+        margin-bottom: 19px
       &__button
         &--next
           position: relative
+          width: 49px
+          height: 49px
           top: 24px
           left: 50%
           transform: translateX(-50%)
@@ -542,6 +576,8 @@
         align-items: center
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)
         // height: 371px
+      &__review
+        line-height: 22px
       &__user
         flex-direction: column
         align-items: center
@@ -562,15 +598,56 @@
   .swiper-container
     box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
     border-radius: 8px
+  .social
+    padding-top: 42px
+    &-top
+      &__title
+        margin-top: 24px
+        margin-bottom: 19px
+    &-bottom
+      &__item
+        &:nth-child(1)
+          margin-bottom: 18px
+      &__item
+        &:nth-child(2)
+          margin-bottom: 18px
+      &__icon
+        width: 48px
+        height: 48px
+      &__image
+        display: block
+        position: relative
+        width: 21px
+        height: 21px
+        left: 13px
+        top: 14px
+      &__text
+        margin-bottom: 2px
+  .order
+    padding-top: 40px
+    &-wrapper
+      &__title
+        margin-bottom: 32px
+      &__text
+        margin-bottom: 38px
   .footer
+    padding-left: 8px
     &-info
+      &__blocks
+        margin: 0
+        width: 100%
       &__blocks2
         display: flex
         flex-wrap: wrap
         justify-content: flex-start
+        margin-bottom: 30px
+      &__block 
+        min-width: 100%
+        margin: 0
       &__item
         &:nth-child(1)
           margin-right: 44px
+          margin-bottom: 24px
         &:nth-child(3)
           margin-right: 56px
         &-link
@@ -578,17 +655,23 @@
             display: none
           &--hidden
             display: block
+      &-social
+        &__link
+          display: block
 @media (max-width: 450px)
   .hero
     &::before
       background-image: url(../img/mac-320.png)
-      top: 460px
+      top: 443px
     &__button
       margin-bottom: 460px
 @media (max-width: 350px)
   .hero
     &__button
-      margin-bottom: 330px
+      margin-bottom: 319px
+      &-circle
+        width: 48px
+        height: 48px
   .card
     &__title
-      margin-bottom: 0
+      margin-bottom: 9px
