@@ -1,23 +1,26 @@
 $(document).ready(function () {
-  var menuButton = document.querySelector(".navbar-menu__link-button");
-  menuButton.addEventListener("click", function () {
-    document
-      .querySelector(".navbar-menu__hidden")
-      .classList.toggle("navbar-menu__hidden--visible");
+  
+  var menuButton = $(".navbar-menu__link-button");
+  menuButton.on("click", function () {
+    $(".navbar-menu__hidden")
+      .toggleClass("navbar-menu__hidden--visible");
+  });
+  var menuButton = $(".navbar-menu__link-buttons");
+  menuButton.on("click", function () {
+    $(".navbar-menu__hiddens")
+      .toggleClass("navbar-menu__hidden--visible");
   });
 
-  var menuButton = document.querySelector(".button-hidden");
-  menuButton.addEventListener("click", function () {
-    document
-      .querySelector(".navbar-menu")
-      .classList.toggle("navbar-menu--visible");
-    document.querySelector("body").classList.toggle("stopscroll");
+  var menuButton = $(".button-hidden");
+  menuButton.on("click", function () {
+    $(".navbar-menu").toggleClass("navbar-menu--visible");
+    $("body").toggleClass("stopscroll");
   });
 
   const portfolioSwiper = new Swiper(".portfolio-slider", {
     // Optional parameters
     loop: true,
-    slidesPerView: "auto",
+    // slidesPerView: "auto",
     spaceBetween: 30,
 
     // Navigation arrows
@@ -35,7 +38,6 @@ $(document).ready(function () {
     // Optional parameters
     loop: true,
     slidesPerView: "auto",
-    spaceBetween: 30,
 
     // Navigation arrows
     navigation: {

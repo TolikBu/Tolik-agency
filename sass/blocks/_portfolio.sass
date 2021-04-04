@@ -1,6 +1,8 @@
 .portfolio
   padding: 100px 0
   // scroll-behavior: smooth
+  &-duble
+    display: none
   &-wrapper
     // position: relative
     // overflow: hidden
@@ -49,13 +51,17 @@
   &-slides
     &__card
       // position: absolute
-      width: 360px
+      min-width: 360px
       border-radius: 10px
       border: 1px solid #DDE6F4
+    &__images
+      min-height: 400px
+    &__image
+      height: 400px
+      object-fit: cover
     &__footer
-      padding-top: 24px
-      padding-left: 24px
-      padding-bottom: 24px
+      padding: 24px
+      padding-right: 0
     &__info
       font-family: $open
       font-style: normal
@@ -72,7 +78,7 @@
       letter-spacing: 0.2px
       color: $navy
   .portfolio-slider
-    width: 1530px
+    width: 360px
     height: 524px
     margin: 0
     right: 0

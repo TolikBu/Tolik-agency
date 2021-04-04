@@ -43,6 +43,100 @@
       min-height: 400px
       &__card
         max-width: 280px
+  .portfolio
+    display: none
+    &-duble
+      display: block
+    &-heading
+      &__button
+        display: none
+    &-slides
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      &__images
+        min-height: 300px
+      &__image
+        height: 300px
+        object-fit: cover
+      &__card
+        margin-bottom: 24px
+  .reviews-slider
+    min-height: 100%
+  .card
+    min-width: 100%
+  .swiper-slide
+    max-width: 100%
+  .footer
+    &-info
+      max-width: none
+      flex-wrap: wrap
+      &__blocks
+        margin-right: 15px
+        order: 2
+      &__blocks2
+        order: -1
+        margin-bottom: 20px
+      &__item
+        margin-right: 15px
+@media (min-width: 992px)
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: $blue
+          &::after
+            background-image: url('../img/button-down-blue.svg')
+      &__hidden, &__hiddens
+        &-link
+          &:hover
+            color: $blue
+    &-button, &-buttons
+      &:hover
+        background-color: $blue
+      &__text
+        &:hover
+          color: #fff
+  .hero
+    &__button
+      &:hover
+        background: $light
+        color: $navy
+      &-circle
+        &:hover
+          border: 4px solid $navy
+          background-image: url("../img/dark-down.svg")
+  .reviews
+    &-heading
+      &__button
+        &--next
+          &:hover
+            background-color:
+            border: 2px solid #ededed
+  .social
+    &-bottom
+      &__link
+        &:hover
+          color: $navy
+          &::after
+            background-image: url("../img/link-icon-dark.svg")
+  .order
+    &-wrapper
+      &__button
+        &:hover
+          color: #FFFFFF
+          background: #0D2436
+  .modal
+    &__button
+      &:hover
+        background-color: $navy
+        color: #fff
+  .footer
+    &-info
+      &__item
+        &-link
+          &:hover
+            color: #fff
 @media (max-width: 991px)
   .container
     max-width: 700px
@@ -62,9 +156,10 @@
   .hero
     padding: 33px 0 30px 0
     &::before
-      right: -160px
+      right: 100px
+      width: 150px
+      height: 300px
       background-image: url("../img/iphone-hero.png")
-      background-size: 40%
     &-info
       height: 562px
       &__title
@@ -94,7 +189,8 @@
         line-height: 24px
     &-logo
       &__item
-        margin-right: 15px
+        &:not(:last-child)
+          margin-right: 15px
   .service
     &-heading
       flex-direction: column
@@ -108,12 +204,16 @@
       justify-content: space-between
       &__card
         margin-bottom: 15px
+  .portfolio
+    &-slides
+      &__card
+        max-width: 280px
 @media (max-width: 768px)
   .container
     max-width: 576px
-    width: 92%
+    width: 90%
   body
-    margin-top: 83px
+    margin-top: 70px
   .stopscroll
     overflow-y: hidden
   .navbar
@@ -176,17 +276,146 @@
         height: 1px
         background-color: #3A4C66
   .hero
+    &::before
+      display: none
     &-wrapper
       min-width: 100%
   .partners
+    &__info
+      margin-bottom: 24px
     &-text
       flex-direction: column
       align-items: start
       &__title
         margin-bottom: 20px
+  .service
+    &-heading
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        font-size: 16px
+        line-height: 28px
+    &-info
+      &__card
+        min-width: 100%
+  .card
+    &__title
+      font-size: 20px
+      line-height: 24px
+  .portfolio
+    padding-top: 48px
+    padding-bottom: 28px
+    &__info
+      text-align: center
+      margin-bottom: 16px
+    &-heading
+      justify-content: center
+      margin-bottom: 36px
+      &__title
+        font-size: 28px
+        line-height: 36px
+    &-slides
+      &__card
+        min-width: 100%
+      &__images
+        min-width: 100%
+      &__image
+        width: 100%
+      &__footer
+        text-align: center
+      &__name
+        font-size: 24px
+        line-height: 32px
+  .reviews
+    padding-top: 28px
+    &-slides
+      &__card
+        max-width: 100%
+        margin-right: 0
+  .swiper-slide
+    max-width: 100%
+    margin-right: 0
+  .social
+    padding: 72px 0 56px 0
+    &-top
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin-bottom: 32px
+    &-bottom
+      flex-wrap: wrap
+      &__item
+        align-items: center
+        max-width: 130px
+        // max-height: 199px
+        margin-bottom: 32px
+        &:not(:last-child)
+          margin-right: 0
+      &__icon
+        margin-bottom: 15px
+      &__text
+        font-size: 13px
+        line-height: 19px
+        height: 77px
+      &__link
+        font-size: 11px
+        line-height: 20px
+        &::after
+          left: 77px
+          top: -1px
+  .order
+    padding: 64px 0 64px 0
+    &-wrapper
+      &__title
+        font-size: 28px
+        line-height: 30px
+      &__text
+        font-size: 16px
+        line-height: 27px
+      &__button
+        padding: 13px 25px
+  .footer
+    padding: 48px 0 78px 0
+    &-info
+      margin-bottom: 0
+      &__blocks
+        margin: auto
+      &__block
+        margin-right: 0
+        align-items: center
+      &__logo
+        margin: auto
+        margin-bottom: 16px
+      &__text
+        text-align: center
+        margin-bottom: 24px
+      &__items
+        display: flex
+        justify-content: space-around
+      &__social
+        &-links
+          margin-right: 0
+      &__item
+        font-size: 16px
+        line-height: 22px
+        &-title
+          font-size: 16px
+          line-height: 22px
+          margin-bottom: 20px
+        &-link
+          font-size: 14px
+          line-height: 20px
+          margin-bottom: 15px
+          &--visible
+            font-size: 14px
+            line-height: 20px
+            margin-bottom: 15px
+    &-bottom
+      display: none
 @media (max-width: 576px)
   body
-    margin-top: 73px
+    margin-top: 71px
   .container
     max-width: 90%
   .navbar
@@ -196,6 +425,7 @@
     padding-top: 36px
     padding-bottom: 48px
     &::before
+      display: block
       background-image: url(../img/mac.png)
       background-size: 60%
       width: 100%
@@ -254,13 +484,23 @@
       flex-wrap: wrap
       justify-content: space-evenly
       &__item
-        width: 180px
+        min-width: 126px
         height: 32px
-        flex-basis: 40%
+        // flex-basis: 40%
         margin-right: 0
-        margin-bottom: 25px
+        &:nth-child(1)
+          margin-bottom: 25px
+        &:nth-child(2)
+          margin-bottom: 25px
         &:nth-child(5)
           display: none
+    &__image
+      display: block
+      margin: auto
+  .portfolio
+    &-slides
+      &__footer
+        padding-left: 0
   .service
     padding: 36px 0 35px 0
     &-heading
@@ -281,6 +521,63 @@
         &__text
           font-size: 14px
           line-height: 20px
+  .reviews
+    &__info
+      text-align: center
+    &-heading
+      &__title
+        font-size: 28px
+        line-height: 36px
+        margin: auto
+        margin-bottom: 68px
+      &__button
+        &--next
+          position: relative
+          top: 24px
+          left: 50%
+          transform: translateX(-50%)
+    &-slides
+      &__card
+        padding: 24px 10px 18px 10px
+        align-items: center
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)
+        // height: 371px
+      &__user
+        flex-direction: column
+        align-items: center
+        margin-bottom: 6px
+      &__avatar
+        margin-right: 0
+        margin-bottom: 16px
+      &__username
+        text-align: center
+      &__name
+        font-size: 20px
+        line-height: 24px
+      &__title
+        font-size: 11px
+        line-height: 27px
+      &__text
+        text-align: center
+  .swiper-container
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+    border-radius: 8px
+  .footer
+    &-info
+      &__blocks2
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+      &__item
+        &:nth-child(1)
+          margin-right: 44px
+        &:nth-child(3)
+          margin-right: 56px
+        &-link
+          &--visible
+            display: none
+          &--hidden
+            display: block
 @media (max-width: 450px)
   .hero
     &::before

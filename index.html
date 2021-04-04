@@ -46,14 +46,15 @@
               <li class="navbar-menu__item">
                 <button
                   href="#"
-                  class="navbar-menu__link navbar-menu__link-button"
+                  class="navbar-menu__link navbar-menu__link-buttons"
                 >
                   Страницы
                 </button>
-                <ul class="navbar-menu__hidden">
+                <ul class="navbar-menu__hiddens">
                   <li class="navbar-menu__hidden-link">Главная</li>
-                  <li class="navbar-menu__hidden-link">Проекты</li>
                   <li class="navbar-menu__hidden-link">Отзывы</li>
+                  <li class="navbar-menu__hidden-link">Инфомация</li>
+                  <li class="navbar-menu__hidden-link">Проекты</li>
                   <li class="navbar-menu__hidden-link">Конаткы</li>
                 </ul>
               </li>
@@ -282,11 +283,13 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide portfolio-slides">
                 <div class="portfolio-slides__card">
-                  <img
-                    src="./img/slide-1.png"
-                    alt="slide"
-                    class="portfolio-slides__image"
-                  />
+                  <div class="portfolio-slides__images">
+                    <img
+                      src="./img/slide-1.png"
+                      alt="slide"
+                      class="portfolio-slides__image"
+                    />
+                  </div>
                   <div class="portfolio-slides__footer">
                     <div class="portfolio-slides__info">Вебсайт, Лендинг</div>
                     <div class="portfolio-slides__name">Проект Вебсайта</div>
@@ -296,11 +299,13 @@
               <!-- /.portfolio-card -->
               <div class="swiper-slide portfolio-slides">
                 <div class="portfolio-slides__card">
-                  <img
-                    src="./img/slide-2.png"
-                    alt="slide"
-                    class="portfolio-slides__image"
-                  />
+                  <div class="portfolio-slides__images">
+                    <img
+                      src="./img/slide-2.png"
+                      alt="slide"
+                      class="portfolio-slides__image"
+                    />
+                  </div>
                   <div class="portfolio-slides__footer">
                     <div class="portfolio-slides__info">
                       Паенль навигации, UI/UX Дизайн
@@ -312,11 +317,13 @@
               <!-- /.portfolio-card -->
               <div class="swiper-slide portfolio-slides">
                 <div class="portfolio-slides__card">
-                  <img
-                    src="./img/slide-3.png"
-                    alt="slide"
-                    class="portfolio-slides__image"
-                  />
+                  <div class="portfolio-slides__images">
+                    <img
+                      src="./img/slide-3.png"
+                      alt="slide"
+                      class="portfolio-slides__image"
+                    />
+                  </div>
                   <div class="portfolio-slides__footer">
                     <div class="portfolio-slides__info">
                       Приложения, Мобильные, iOS
@@ -328,11 +335,13 @@
               <!-- /.portfolio-card -->
               <div class="swiper-slide portfolio-slides">
                 <div class="portfolio-slides__card">
-                  <img
-                    src="./img/slide-4.png"
-                    alt="slide"
-                    class="portfolio-slides__image"
-                  />
+                  <div class="portfolio-slides__images">
+                    <img
+                      src="./img/slide-4.png"
+                      alt="slide"
+                      class="portfolio-slides__image"
+                    />
+                  </div>
                   <div class="portfolio-slides__footer">
                     <div class="portfolio-slides__info">Instagram</div>
                     <div class="portfolio-slides__name">Проект Иллюстраций</div>
@@ -342,11 +351,93 @@
               <!-- /.portfolio-card -->
             </div>
           </div>
+          <!-- /.porfolio-sider -->
         </div>
         <!-- /.portfolio-wrapper -->
       </div>
     </section>
     <!-- /.portfolio -->
+    <section class="portfolio portfolio-duble" id="portfolio">
+      <div class="container">
+        <div class="portfolio-wrapper">
+          <span class="portfolio__info const-text">Портфолио</span>
+          <div class="portfolio-heading">
+            <h2 class="portfolio-heading__title">Наши проекты</h2>
+            <div class="portfolio-heading__button">
+              <button
+                class="portfolio-heading__button portfolio-heading__button--prev"
+              ></button>
+              <button
+                class="portfolio-heading__button portfolio-heading__button--next"
+              ></button>
+            </div>
+          </div>
+          <!-- /.portfolio-heading -->
+          <div class="portfolio-slides">
+            <div class="portfolio-slides__card">
+              <div class="portfolio-slides__images">
+                <img
+                  src="./img/slide-1.png"
+                  alt="slide"
+                  class="portfolio-slides__image"
+                />
+              </div>
+              <div class="portfolio-slides__footer">
+                <div class="portfolio-slides__info">Вебсайт, Лендинг</div>
+                <div class="portfolio-slides__name">Проект Вебсайта</div>
+              </div>
+            </div>
+            <!-- /.portfolio-card -->
+            <div class="portfolio-slides__card">
+              <div class="portfolio-slides__images">
+                <img
+                  src="./img/slide-2.png"
+                  alt="slide"
+                  class="portfolio-slides__image"
+                />
+              </div>
+              <div class="portfolio-slides__footer">
+                <div class="portfolio-slides__info">
+                  Паенль навигации, UI/UX Дизайн
+                </div>
+                <div class="portfolio-slides__name">Проект Дизайна</div>
+              </div>
+            </div>
+            <!-- /.portfolio-card -->
+            <div class="portfolio-slides__card">
+              <div class="portfolio-slides__images">
+                <img
+                  src="./img/slide-3.png"
+                  alt="slide"
+                  class="portfolio-slides__image"
+                />
+              </div>
+              <div class="portfolio-slides__footer">
+                <div class="portfolio-slides__info">
+                  Приложения, Мобильные, iOS
+                </div>
+                <div class="portfolio-slides__name">Проекты приложений</div>
+              </div>
+            </div>
+            <!-- /.portfolio-card -->
+            <div class="portfolio-slides__card">
+              <div class="portfolio-slides__images">
+                <img
+                  src="./img/slide-4.png"
+                  alt="slide"
+                  class="portfolio-slides__image"
+                />
+              </div>
+              <div class="portfolio-slides__footer">
+                <div class="portfolio-slides__info">Instagram</div>
+                <div class="portfolio-slides__name">Проект Иллюстраций</div>
+              </div>
+            </div>
+            <!-- /.portfolio-card -->
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="reviews">
       <div class="container">
         <div class="reviews-wrapper">
@@ -595,60 +686,75 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-info">
-            <div class="footer-info__block">
-              <a href="index.html" class="footer-info__logo">
-                <img
-                  src="./img/Logo-footer.png"
-                  alt="logo"
-                  class="footer-info__logo"
-              /></a>
-              <div class="footer-info__text">
-                Создайте современный и креативный веб-сайт с crealand
-              </div>
-              <div class="footer-info__items">
-                <div class="footer-info__social-links">
-                  <a href="https://www.google.com"
-                    ><img
-                      src="./img/google-icon.svg"
+            <div class="footer-info__blocks">
+              <div class="footer-info__block">
+                <a href="index.html" class="footer-info__logo">
+                  <img
+                    src="./img/Logo-footer.png"
+                    alt="logo"
+                    class="footer-info__logo"
+                /></a>
+                <div class="footer-info__text">
+                  Создайте современный и креативный веб-сайт с crealand
+                </div>
+                <div class="footer-info__items">
+                  <div class="footer-info__social-links">
+                    <a title="google.com" href="https://www.google.com"
+                      ><img
+                        src="./img/google-icon.svg"
+                        target="_blank"
+                        alt="google"
+                        class="footer-info__social-icon"
+                    /></a>
+                  </div>
+                  <div class="footer-info__social-links">
+                    <a
+                      title="twitter.com"
+                      href="https://www.twitter.com"
                       target="_blank"
-                      alt="google"
-                      class="footer-info__social-icon"
-                  /></a>
-                </div>
-                <div class="footer-info__social-links">
-                  <a href="https://www.twitter.com" target="_blank"
-                    ><img
-                      src="./img/twitter-icon.svg"
-                      alt="twitter link"
-                      class="footer-info__social-icon"
-                  /></a>
-                </div>
-                <div class="footer-info__social-links">
-                  <a href="https://www.instagram.com" target="_blank"
-                    ><img
-                      src="./img/instagram-icon.svg"
-                      alt="instagram"
-                      class="footer-info__social-icon"
-                  /></a>
-                </div>
-                <div class="footer-info__social-links">
-                  <a href="https://www.linkedin.com" target="_blank"
-                    ><img
-                      src="./img/linkedin-icon.svg"
-                      alt="linkedin"
-                      class="footer-info__social-icon"
-                  /></a>
-                </div>
-                <div class="footer-info__social-links">
-                  <a href="https://www.youtube.com" target="_blank"
-                    ><img
-                      src="./img/youtube-icon.svg"
-                      alt="youtube"
-                      class="footer-info__social-icon"
-                  /></a>
+                      ><img
+                        src="./img/twitter-icon.svg"
+                        alt="twitter link"
+                        class="footer-info__social-icon"
+                    /></a>
+                  </div>
+                  <div class="footer-info__social-links">
+                    <a
+                      title="instagram.com"
+                      href="https://www.instagram.com"
+                      target="_blank"
+                      ><img
+                        src="./img/instagram-icon.svg"
+                        alt="instagram"
+                        class="footer-info__social-icon"
+                    /></a>
+                  </div>
+                  <div class="footer-info__social-links">
+                    <a
+                      title="linkedin.com"
+                      href="https://www.linkedin.com"
+                      target="_blank"
+                      ><img
+                        src="./img/linkedin-icon.svg"
+                        alt="linkedin"
+                        class="footer-info__social-icon"
+                    /></a>
+                  </div>
+                  <div class="footer-info__social-links">
+                    <a
+                      title="youtube.com"
+                      href="https://www.youtube.com"
+                      target="_blank"
+                      ><img
+                        src="./img/youtube-icon.svg"
+                        alt="youtube"
+                        class="footer-info__social-icon"
+                    /></a>
+                  </div>
                 </div>
               </div>
             </div>
+          <div class="footer-info__blocks2">
             <div class="footer-info__item">
               <h4 class="footer-info__item-title">Продукт</h4>
               <a href="#" class="footer-info__item-link">Лендинг</a>
@@ -669,8 +775,11 @@
               <h4 class="footer-info__item-title">Компания</h4>
               <a href="#" class="footer-info__item-link">О нас</a>
               <a href="#" class="footer-info__item-link">Условия</a>
-              <a href="#" class="footer-info__item-link"
+              <a href="#" class="footer-info__item-link--visible"
                 >Политика конфиденциальности
+              </a>
+              <a href="#" class="footer-info__item-link footer-info__item-link--hidden"
+                >Privacy Policy
               </a>
               <a href="#" class="footer-info__item-link">Careers</a>
             </div>
@@ -680,6 +789,7 @@
               <a href="#" class="footer-info__item-link">Лицензия</a>
               <a href="#" class="footer-info__item-link">Измененния</a>
             </div>
+          </div>
           </div>
           <!-- /.footer-info -->
           <div class="footer-bottom">
@@ -740,7 +850,9 @@
             placeholder="Комментарий*"
             name="message"
           ></textarea>
-          <button class="button modal__button" type="submit">Получить</button>
+          <button class="button modal__button" type="submit">
+            Получить предложение
+          </button>
         </form>
       </div>
       <!-- /.modal__dialog -->
