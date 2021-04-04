@@ -8,7 +8,7 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$mail = $_POST['email'];
+$email = $_POST['email'];
 $message = $_POST['message'];
 
 
@@ -57,4 +57,4 @@ try {
 }
 
 // Отображение результата
-header('Location: index.html');
+header('Location: thankyou.html');
