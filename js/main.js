@@ -1,14 +1,11 @@
 $(document).ready(function () {
-  
   var menuButton = $(".navbar-menu__link-button");
   menuButton.on("click", function () {
-    $(".navbar-menu__hidden")
-      .toggleClass("navbar-menu__hidden--visible");
+    $(".navbar-menu__hidden").toggleClass("navbar-menu__hidden--visible");
   });
   var menuButton = $(".navbar-menu__link-buttons");
   menuButton.on("click", function () {
-    $(".navbar-menu__hiddens")
-      .toggleClass("navbar-menu__hidden--visible");
+    $(".navbar-menu__hiddens").toggleClass("navbar-menu__hidden--visible");
   });
 
   var menuButton = $(".button-hidden");
@@ -88,4 +85,17 @@ $(document).ready(function () {
   });
 
   $("input[name=phone]").mask("+7 (000) 000 0000");
+
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() != 0) {
+        $(".button-up").fadeIn();
+      } else {
+        $(".button-up").fadeOut();
+      }
+    });
+    $(".button-up").click(function () {
+      $("body,html").animate({ scrollTop: 0 }, 700);
+    });
+  });
 });
