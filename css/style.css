@@ -1558,9 +1558,6 @@ button {
   .reviews-slider {
     min-height: 100%;
   }
-  .card {
-    min-width: 100%;
-  }
   .swiper-slide {
     max-width: 100%;
   }
@@ -1958,7 +1955,7 @@ button {
     line-height: 20px;
     margin-bottom: 15px;
   }
-  .footer-info__item-link--visible {
+  .footer-info__item-link-visible {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 15px;
@@ -2267,7 +2264,7 @@ button {
   .footer-info__item:nth-child(3) {
     margin-right: 56px;
   }
-  .footer-info__item-link--visible {
+  .footer-info__item-link-visible {
     display: none;
   }
   .footer-info__item-link--hidden {
