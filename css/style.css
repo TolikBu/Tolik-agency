@@ -1137,7 +1137,7 @@ button {
   position: absolute;
   left: 122px;
   top: 5px;
-  background-image: url("../img/link-icon.svg");
+  background-image: url("../img/link-icon.png");
   background-repeat: no-repeat;
   background-position: center;
 }
