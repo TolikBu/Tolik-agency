@@ -2,17 +2,25 @@
   padding: 58px 0 108px 0
   position: relative
   background-color: $light
-  // scroll-behavior: smooth
+  &-wrapper
+    display: flex
+    position: relative
   &::before
+    display: none
     content: ''
     position: absolute
     top: 58px
-    right: 0px
+    right: 0
     height: 657px
     width: 754px
     background-image: url("../img/mac.png")
     background-size: inherit
     background-repeat: no-repeat
+  &-image
+    position: absolute
+    width: 1030px
+    height: 657px
+    left: 536px
   &-main
     @include disJustAli
     position: relative
