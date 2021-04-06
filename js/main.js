@@ -8,6 +8,9 @@ $(document).ready(function () {
     $(".navbar-menu__hiddens").toggleClass("navbar-menu__hidden--visible");
   });
 
+
+
+
   var menuButton = $(".button-hidden");
   menuButton.on("click", function () {
     $(".navbar-menu").toggleClass("navbar-menu--visible");
@@ -16,15 +19,16 @@ $(document).ready(function () {
 
   const portfolioSwiper = new Swiper(".portfolio-slider", {
     // Optional parameters
-    loop: true,
+
     // slidesPerView: "auto",
     spaceBetween: 30,
-
+    // watchOverflow: true,
     // Navigation arrows
     navigation: {
       nextEl: ".portfolio-heading__button--next",
       prevEl: ".portfolio-heading__button--prev",
     },
+
     keyboard: {
       enabled: true,
       onlyInViewport: false,
@@ -38,7 +42,7 @@ $(document).ready(function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: ".reviews-heading__button--next",
+      nextEl: ".reviews-button",
     },
     keyboard: {
       enabled: true,
@@ -64,6 +68,13 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+   document.addEventListener("keydown", (event) => {
+     if (event.code === "Escape") {
+       closeModal(event);
+     }
+   });
+
+
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",

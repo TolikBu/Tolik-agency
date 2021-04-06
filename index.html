@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tolik-Agency</title>
+    <title>Агентство Толика</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -29,22 +29,22 @@
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">Домой</a>
               </li>
-              <li class="navbar-menu__item">
-                <button class="navbar-menu__link navbar-menu__link-button">
+              <li class="navbar-menu__item" data-target="hidden">
+                <button  class="navbar-menu__link navbar-menu__link-button">
                   Лэндинги
                 </button>
-                <ul class="navbar-menu__hidden">
+                <ul class="navbar-menu__hidden" id="hidden">
                   <li class="navbar-menu__hidden-link">Flowers</li>
                   <li class="navbar-menu__hidden-link">House</li>
                   <li class="navbar-menu__hidden-link">Devs</li>
                   <li class="navbar-menu__hidden-link">Music</li>
                 </ul>
               </li>
-              <li class="navbar-menu__item">
-                <button class="navbar-menu__link navbar-menu__link-buttons">
+              <li class="navbar-menu__item" data-target="hiddens">
+                <button  class="navbar-menu__link navbar-menu__link-buttons">
                   Страницы
                 </button>
-                <ul class="navbar-menu__hiddens">
+                <ul class="navbar-menu__hiddens" id="hiddens">
                   <li class="navbar-menu__hidden-link">Главная</li>
                   <li class="navbar-menu__hidden-link">Отзывы</li>
                   <li class="navbar-menu__hidden-link">Инфомация</li>
@@ -96,6 +96,9 @@
               <a class="button hero__button-circle" href="#partners"></a>
             </div>
             <!-- /.hero-info -->
+            <div class="hero-image">
+              <img src="./img/mac2.png" alt="" class="hero-image__mac" />
+            </div>
           </div>
           <!-- /.hero-wrapper__text -->
         </div>
@@ -110,7 +113,7 @@
             <span class="partners__our const-text">Наши партнеры</span>
             <div class="partners-text">
               <h2 class="partners-text__title">
-                Мы работали с<br />ними,<br />Мы доверяем друг другу
+                Мы работали с ними,<br />Мы доверяем друг другу
               </h2>
               <span class="partners-text__quality">
                 Наша команда предоставляет творческое образование высокого
@@ -258,95 +261,97 @@
     </section>
     <!-- /.service -->
     <section class="portfolio" id="portfolio">
-      <div class="portfolio-wrapper">
-        <span class="portfolio__info const-text">Портфолио</span>
-        <div class="portfolio-heading">
-          <h2 class="portfolio-heading__title">Наши проекты</h2>
-          <div class="portfolio-heading__button">
-            <button
-              class="portfolio-heading__button portfolio-heading__button--prev"
-            ></button>
-            <button
-              class="portfolio-heading__button portfolio-heading__button--next"
-            ></button>
+      <div class="container">
+        <div class="portfolio-wrapper">
+          <span class="portfolio__info const-text">Портфолио</span>
+          <div class="portfolio-heading">
+            <h2 class="portfolio-heading__title">Наши проекты</h2>
+            <div class="portfolio-heading__button">
+              <button
+                class="portfolio-heading__button portfolio-heading__button--prev"
+              ></button>
+              <button
+                class="portfolio-heading__button portfolio-heading__button--next"
+              ></button>
+            </div>
           </div>
-        </div>
-        <!-- /.portfolio-heading -->
-        <div class="swiper-container portfolio-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide portfolio-slides">
-              <div class="portfolio-slides__card">
-                <div class="portfolio-slides__images">
-                  <img
-                    src="./img/slide-1.png"
-                    alt="slide"
-                    class="portfolio-slides__image"
-                  />
-                </div>
-                <div class="portfolio-slides__footer">
-                  <div class="portfolio-slides__info">Вебсайт, Лендинг</div>
-                  <div class="portfolio-slides__name">Проект Вебсайта</div>
-                </div>
-              </div>
-            </div>
-            <!-- /.portfolio-card -->
-            <div class="swiper-slide portfolio-slides">
-              <div class="portfolio-slides__card">
-                <div class="portfolio-slides__images">
-                  <img
-                    src="./img/slide-2.png"
-                    alt="slide"
-                    class="portfolio-slides__image"
-                  />
-                </div>
-                <div class="portfolio-slides__footer">
-                  <div class="portfolio-slides__info">
-                    Паенль навигации, UI/UX Дизайн
+          <!-- /.portfolio-heading -->
+          <div class="swiper-container portfolio-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide portfolio-slides">
+                <div class="portfolio-slides__card">
+                  <div class="portfolio-slides__images">
+                    <img
+                      src="./img/slide-1.png"
+                      alt="slide"
+                      class="portfolio-slides__image"
+                    />
                   </div>
-                  <div class="portfolio-slides__name">Проект Дизайна</div>
-                </div>
-              </div>
-            </div>
-            <!-- /.portfolio-card -->
-            <div class="swiper-slide portfolio-slides">
-              <div class="portfolio-slides__card">
-                <div class="portfolio-slides__images">
-                  <img
-                    src="./img/slide-3.png"
-                    alt="slide"
-                    class="portfolio-slides__image"
-                  />
-                </div>
-                <div class="portfolio-slides__footer">
-                  <div class="portfolio-slides__info">
-                    Приложения, Мобильные, iOS
+                  <div class="portfolio-slides__footer">
+                    <div class="portfolio-slides__info">Вебсайт, Лендинг</div>
+                    <div class="portfolio-slides__name">Проект Вебсайта</div>
                   </div>
-                  <div class="portfolio-slides__name">Проекты приложений</div>
                 </div>
               </div>
-            </div>
-            <!-- /.portfolio-card -->
-            <div class="swiper-slide portfolio-slides">
-              <div class="portfolio-slides__card">
-                <div class="portfolio-slides__images">
-                  <img
-                    src="./img/slide-4.png"
-                    alt="slide"
-                    class="portfolio-slides__image"
-                  />
-                </div>
-                <div class="portfolio-slides__footer">
-                  <div class="portfolio-slides__info">Instagram</div>
-                  <div class="portfolio-slides__name">Проект Иллюстраций</div>
+              <!-- /.portfolio-card -->
+              <div class="swiper-slide portfolio-slides">
+                <div class="portfolio-slides__card">
+                  <div class="portfolio-slides__images">
+                    <img
+                      src="./img/slide-2.png"
+                      alt="slide"
+                      class="portfolio-slides__image"
+                    />
+                  </div>
+                  <div class="portfolio-slides__footer">
+                    <div class="portfolio-slides__info">
+                      Паенль навигации, UI/UX Дизайн
+                    </div>
+                    <div class="portfolio-slides__name">Проект Дизайна</div>
+                  </div>
                 </div>
               </div>
+              <!-- /.portfolio-card -->
+              <div class="swiper-slide portfolio-slides">
+                <div class="portfolio-slides__card">
+                  <div class="portfolio-slides__images">
+                    <img
+                      src="./img/slide-3.png"
+                      alt="slide"
+                      class="portfolio-slides__image"
+                    />
+                  </div>
+                  <div class="portfolio-slides__footer">
+                    <div class="portfolio-slides__info">
+                      Приложения, Мобильные, iOS
+                    </div>
+                    <div class="portfolio-slides__name">Проекты приложений</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.portfolio-card -->
+              <div class="swiper-slide portfolio-slides">
+                <div class="portfolio-slides__card">
+                  <div class="portfolio-slides__images">
+                    <img
+                      src="./img/slide-4.png"
+                      alt="slide"
+                      class="portfolio-slides__image"
+                    />
+                  </div>
+                  <div class="portfolio-slides__footer">
+                    <div class="portfolio-slides__info">Instagram</div>
+                    <div class="portfolio-slides__name">Проект Иллюстраций</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.portfolio-card -->
             </div>
-            <!-- /.portfolio-card -->
           </div>
+          <!-- /.porfolio-sider -->
         </div>
-        <!-- /.porfolio-sider -->
+        <!-- /.portfolio-wrapper -->
       </div>
-      <!-- /.portfolio-wrapper -->
     </section>
     <!-- /.portfolio -->
     <section class="portfolio portfolio-duble" id="portfolio2">
@@ -550,9 +555,7 @@
             <!-- /.swiper-wrapper -->
           </div>
           <!-- ./reviews-slider -->
-          <button
-            class="reviews-heading__button reviews-heading__button--next"
-          ></button>
+          <button class="reviews-button"></button>
         </div>
         <!-- /.reviews-wrapper -->
       </div>

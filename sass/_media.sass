@@ -11,6 +11,7 @@
   .hero
     padding: 66px 0 85px 0
     &::before
+      display: block
       width: 50%
       height: 100%
     &-info
@@ -22,6 +23,8 @@
           line-height: 52px
       &__text
         max-width: 450px
+    &-image
+      display: none
   .partners
     padding: 80px 0
     &__info
@@ -43,6 +46,8 @@
       min-height: 400px
       &__card
         max-width: 280px
+  .card
+    justify-content: start
   .portfolio
     display: none
     &-duble
@@ -432,6 +437,17 @@
   .navbar
     padding-top: 20px
     padding-bottom: 20px
+    &-menu
+      &--visible
+        top: 60px
+      &__item
+        &:nth-child(3)
+          margin-right: 0
+      &__link
+        margin-right: 0
+      &__hidden
+        &--visible
+          display: none
   .hero
     padding-top: 29px
     padding-bottom: 48px
@@ -573,20 +589,19 @@
         line-height: 36px
         margin: auto
         margin-bottom: 19px
-      &__button
-        &--next
-          position: relative
-          width: 49px
-          height: 49px
-          top: 24px
-          left: 50%
-          transform: translateX(-50%)
+    &-button
+      position: relative
+      width: 49px
+      height: 49px
+      top: 24px
+      left: 50%
+      transform: translateX(-50%)
     &-slides
       &__card
         padding: 24px 10px 18px 10px
         align-items: center
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0)
-        // height: 371px
+        height: 354px
       &__review
         line-height: 22px
       &__user
@@ -603,7 +618,7 @@
         line-height: 24px
       &__title
         font-size: 11px
-        line-height: 27px
+        line-height: 27px 
       &__text
         text-align: center
   .swiper-container
@@ -669,6 +684,17 @@
       &-social
         &__link
           display: block
+      &__logo
+        width: 77px
+      &__items
+        justify-content: space-between
+        margin: auto
+        width: 181px
+  .button
+    &-up
+      display: none
+      right: 10px
+      bottom: 10px
   .modal
     &__dialog
       transform: translate(-50%, -50%)
