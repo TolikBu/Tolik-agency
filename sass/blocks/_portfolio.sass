@@ -26,6 +26,11 @@
       position: relative
       outline: none
       margin-right: 95px
+      &-disabled
+        opacity: 0.35
+        cursor: auto
+        pointer-events: none
+        z-index: 100
       &--prev
         width: 56px
         height: 56px
@@ -36,9 +41,6 @@
         transform: rotate(180deg)
         background-repeat: no-repeat
         background-position: center
-        // &:hover
-        //   background-image: url(../img/next-button.svg)
-        //   transform: rotate(180deg)
       &--next
         width: 56px
         height: 56px
@@ -48,9 +50,6 @@
         background-image: url(../img/active-batton.svg)
         background-repeat: no-repeat
         background-position: center
-        // &:hover
-        //   background-image: url(../img/next-button.svg)
-        //   transform: rotate(360deg)
   &-slides
     &__card
       // position: absolute
@@ -94,3 +93,13 @@
     position: absolute
   .swiper-slide
     width: 360px
+.swiper-button-next
+  width: 56px
+  height: 56px
+  border: none
+  background: #fff
+  margin: 0
+  background-image: url(../img/active-batton.svg)
+  // transform: rotate(180deg)
+  background-repeat: no-repeat
+  background-position: center
