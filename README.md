@@ -1,2 +1,2 @@
-# Tolik-agency  домашняя работа на курсе WEB-Start
-https://tolikwu.ru/tolik-agency/
+# Tolik-agency https://tolikwu.ru/tolik-agency/
+Выпускная работа на курсе WEB-Start в онлайн школе Glo Academy
